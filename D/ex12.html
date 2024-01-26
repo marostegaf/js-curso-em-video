@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem</title>
+    <style>
+        body {
+            background-color: wheat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding-top: 190px
+        }
+
+        input, div {    
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        input[type="text"], input[type="button"] {
+            border: 2px solid black;
+            padding: 3px 15px;
+            font-size: 20px;
+            background-color: wheat;
+            border-radius: 0;
+            color: black
+        }
+        
+        input[type="button"] {
+            cursor: pointer;
+            background-color: wheat;
+        }
+
+        strong {
+         color: blue;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Origem</h1>
+    <p>Digite seu pais de nascimento</p> <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Visualizar" onclick="pais()">
+    <div id = pais> </div>
+    <script>
+        function pais() {
+            txtp = document.getElementById("txtp")
+            var origem = document.querySelector("div#pais")
+            var pais = (txtp.value)
+            origem.innerHTML = "<p>Você é um: </p>"
+            if (pais == "Brasil") {
+                origem.innerHTML = `Se você mora no ${pais} você é <strong>Brasileiro!</strong>`
+            } else {
+                origem.innerHTML = `Se você mora no ${pais} você é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
