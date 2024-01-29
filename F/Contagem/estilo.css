@@ -1,0 +1,47 @@
+body {
+    background-color: wheat;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 0%;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.623);
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+.adicionar {
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.finalizar {
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#txtnum {
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
